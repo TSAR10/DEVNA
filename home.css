@@ -14,6 +14,7 @@
 	grid-template-rows: 4;
 }
 .menu{
+	cursor: default;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	height: auto;
@@ -58,4 +59,32 @@
 	max-height: 100%;
 	height: auto;
 	text-align: center;
+}
+.hamburger{
+	visibility: hidden;
+	grid-area: 0;
+	max-width: 50px;
+	width: 10px;
+	height: auto;
+}
+@media only screen and (max-width: 600px){
+	.hamburger{
+		margin-top: 30px;
+		margin-bottom: 30px;
+		text-align: center;
+		padding-left: 15px;
+    	padding-right: 15px;
+		visibility: visible;
+		grid-area: 1/1/2/2;
+	}
+	.menu{
+		visibility: hidden;
+	}
+	.swagat{
+	grid-area:1/1/4/6;
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	text-align: center;
+	}
 }

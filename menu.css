@@ -65,6 +65,9 @@ body{
 	.menu{
 		visibility: hidden;
 	}
+	.burger{
+		visibility: visible;
+	}
 	.ham{
 		position: fixed;
 		top: 0.5rem;
@@ -130,7 +133,7 @@ body{
 		top:50%;
 		left: 50%;
 		background-color: rgb(24, 18, 46);
-		opacity: 0.5;
+		opacity: 0;
 		width: 100%;
 		height:100%;
 		display: flex;

@@ -17,7 +17,7 @@ body{
 
 }
 .scroll > div{
-	scroll-snap-align:start;
+	scroll-snap-align:center;
 }
 .front{
     background: rgb(196,138,247);
@@ -27,6 +27,7 @@ body{
 	height:100vh;
 	width:100vw;
 	display:grid;
+	text-align: center;
 	grid-template-rows: 9fr 1fr;
 	align-items: center;
 	justify-content: center;
@@ -58,4 +59,10 @@ body{
 	text-transform: uppercase;
 	font-weight: bold;
 	font-family: Hind;
+}
+@media only screen and (max-width: 600px){
+	.post{
+	justify-self:center;
+	align-self: center;
+	}
 }

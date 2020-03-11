@@ -53,13 +53,7 @@
 }
 .burger{
 	visibility: hidden;
-	top:0;
-	z-index: 10;
-	position: fixed;
-	list-style: none;
-	width: auto;
-	height: auto;
-	background-color: rgb(6,5,63);
+	position: static;
 }
 @media only screen and (max-width: 600px){
 	.menu{
@@ -143,7 +137,7 @@
 		min-height: 100%;
 		border-radius: 45%;
 		border-top-left-radius: 0%;
-		transform: translateX(-150%) translateY(-50%); 
+		transform: translateX(-150%) translateY(0%); 
 		box-shadow: 0px 0px 140px 110px rgba(40,30,80,1);
 		transition: 0.6s;
 	}
@@ -173,7 +167,7 @@
 	}
 	.check:checked ~ .list{
 		opacity: 1;
-		transform:translateX(-50%)translateY(-50%);
+		transform:translateX(-50%)translateY(0%);
 	}
 	.check:checked ~ .list > div{
 		opacity: 1;

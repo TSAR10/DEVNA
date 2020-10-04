@@ -1,4 +1,5 @@
-function slider(){
-	var x = document.getElementByClassName('slideshow');
-	x.style.left = '100px';
-}
+$(document).ready(function(){
+	$("#profile").click(function(){
+		window.location.href = ("../html/login.html");
+	});
+});

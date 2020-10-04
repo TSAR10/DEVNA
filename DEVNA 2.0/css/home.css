@@ -152,11 +152,12 @@ section{
 	background-color: white;
 }
 section > h1{
-	padding:1% 0% 1% 0%;
+	padding:1% 0% 1% 0%;		
 }
-/* section > h1 > a,a:visited,a:hover,a:active{
+section > h1 > a,a:visited,a:hover,a:active{
 	color: #000139;
-} */
+	text-decoration: none;
+}
 section > div{
 	height:40vh;
 	width:100%;

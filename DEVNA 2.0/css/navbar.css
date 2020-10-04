@@ -102,7 +102,7 @@ html, body{
     height:100%;
     cursor:pointer;
 }
-#subicon{
+.subicon{
     background-color:transparent;
     background-image: url(../images/profile.svg);
     background-repeat: no-repeat;
@@ -111,10 +111,10 @@ html, body{
     outline:none;
     background-size: contain;
 }
-.iconcat:nth-child(2) > #subicon{
+.iconcat:nth-child(2) > .subicon{
     background-image: url(../images/locate.svg);
 }
-.iconcat:nth-child(3) > #subicon{
+.iconcat:nth-child(3) > .subicon{
     background-image: url(../images/cart.svg);
 }
 nav{

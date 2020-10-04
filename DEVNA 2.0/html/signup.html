@@ -1,43 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            Signin
-        </title>
-        <link rel="stylesheet" type="text/css" href="../css/sign-in.css">
+        <link rel="stylesheet" href="../css/sign-in.css" type="text/css">
+        <title></title>
     </head>
     <body>
+        <header></header>
         <main>
-            <div id = logo>
-                <img src = "../images/welcome.gif">
-                <span><i>Get Caterer Whenever</i></span>
+            <div>
+                <img src="../images/welcome.gif" alt="logo">
+                <p> Revolutionizing and Empowering the Services & Service Providers with TECH</p>
             </div>
-            <form id="sign-in">
-                <label>
-                    <span>Name : </span>
-                    <input type="text" required id = "name">
-                </label>
-                <label>
-                    <span>Phone No : </span>
-                    <input type="tel" required id = "phno" pattern="^\d{10}$">
-                </label>
-                <label>
-                    <span>E-mail : </span>
-                    <input type="email" required id = "email" >
-                </label>
-                <label>
-                    <span>Password : </span>
-                    <input type="password" required id = "email" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
-                </label>
-                <label>
-                    <span>Confirm : </span>
-                    <input type="password" required id = "email"pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
-                </label>
-                <button>Continue</button>
-                <button>Log-in</button>
-            </form>
+            <div>
+                <h1>Account Sign-In</h1>
+                <form class="login" action="index.html" method="post">
+                    <input type="text" name ="name" placeholder="Name">
+                    <input type="text" name="ph-no" placeholder="Phone Number">
+                    <input type="email" name="email" placeholder="E-Mail">
+                    <input type="password" name="pass" placeholder="Password">
+                    <input type="password" name="con-pass" placeholder="Confirm Password">
+                    <input type="button" name="summit" value="Sign-in">
+                    <input type="button" name="alter" value="Log-in">
+                </form>
+            </div>
         </main>
+        <footer></footer>
     </body>
 </html>

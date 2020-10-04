@@ -67,7 +67,7 @@ footer{
 	width:3%;
 	height:10%;
 	min-width: 35px;
-	background-image: url(/images/left.svg);
+	background-image: url(../images/left.svg);
 	top:50%;
 	left:2%;
 	transform: translateY(-50%);
@@ -79,7 +79,7 @@ footer{
 	width:3%;
 	height:10%;
 	min-width: 35px;
-	background-image: url(/images/right.svg);
+	background-image: url(../images/right.svg);
 	top:50%;
 	transform: translateY(-50%);
 	right:2%;
@@ -94,7 +94,7 @@ footer{
 	width:3%;
 	height:10%;
 	min-width: 35px;
-	background-image: url(/images/left.svg);
+	background-image: url(../images/left.svg);
 	top:50%;
 	transform: translateY(-50%);
 	left:2%;
@@ -106,7 +106,7 @@ footer{
 	width:3%;
 	height:10%;
 	min-width: 35px;
-	background-image: url(/images/right.svg);
+	background-image: url(../images/right.svg);
 	top:50%;
 	transform: translateY(-50%);
 	right:2%;
@@ -121,7 +121,7 @@ footer{
 	width:3%;
 	height:10%;
 	min-width: 35px;
-	background-image: url(/images/left.svg);
+	background-image: url(../images/left.svg);
 	top:50%;
 	transform: translateY(-50%);
 	left:2%;
@@ -133,7 +133,7 @@ footer{
 	width:3%;
 	height:10%;
 	min-width: 35px;
-	background-image: url(/images/right.svg);
+	background-image: url(../images/right.svg);
 	top:50%;
 	transform: translateY(-50%);
 	right:2%;

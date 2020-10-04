@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Signin
+        </title>
+        <link rel="stylesheet" type="text/css" href="/css/sign-in.css">
+    </head>
+    <body>
+        <main>
+            <div id = logo>
+                <img src = "welcome.gif">
+                <span><i>Get Caterer Whenever</i></span>
+            </div>
+            <form id="sign-in">
+                <label>
+                    <span>Name : </span>
+                    <input type="text" required id = "name">
+                </label>
+                <label>
+                    <span>Phone No : </span>
+                    <input type="tel" required id = "phno" pattern="^\d{10}$">
+                </label>
+                <label>
+                    <span>E-mail : </span>
+                    <input type="email" required id = "email" >
+                </label>
+                <label>
+                    <span>Password : </span>
+                    <input type="password" required id = "email" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                </label>
+                <label>
+                    <span>Confirm : </span>
+                    <input type="password" required id = "email"pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                </label>
+                <button>Continue</button>
+                <button>Log-in</button>
+            </form>
+        </main>
+    </body>
+</html>

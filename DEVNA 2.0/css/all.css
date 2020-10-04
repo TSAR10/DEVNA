@@ -1,0 +1,96 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	background-color: rgba(230,230,230,1);
+	width:100%;
+	height:100%;
+	overflow-x: hidden;
+	max-height:100%;
+}
+::-webkit-scrollbar{
+	width:0px; /* Chrome */
+	height: 0px;
+}
+header{
+	z-index: 99999999;
+	position: sticky;
+	top:0;
+	width:100%;
+    height:16%;
+}
+footer{
+	position: relative;
+	height:65%;
+    width:100%;
+}
+main{
+	position: relative;
+	width:100%;
+	height:auto;
+}
+section{
+	width:100%;
+	height:auto;
+}
+h1{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width:100%;
+	height:300px;
+	background-image: url(/images/veg-cover.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: white;
+	background-position: center;
+	color:#110011;
+}
+h1 > span{
+	font-size: clamp(45px,2vw,100px);
+	padding-top: 2%;
+}
+.tiles{
+	padding:2%;
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+	color:black;
+	text-align: center;
+}
+.tiles > div{
+	box-shadow: 0px 0px 5px 5px rgba(0,0,0,1);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	max-width:300px;
+	min-width:300px;
+	width:25%;
+	max-height:318px;
+	min-height: 318px;
+	padding:20px;
+	background-color: white;
+}
+.tiles > div > img{
+	width:100%;
+}
+.tiles > div > p:nth-child(2){
+	font-weight: bolder;
+	font-size: clamp(15px,2vw,20px);
+}
+.tiles > div > p:nth-child(3){
+	font-size: clamp(8px,2vw,12px);
+}
+@media screen and (max-width: 800px){
+	footer{
+		display: none;
+	}
+	header{
+		height:10%;
+	}
+}

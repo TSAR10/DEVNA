@@ -15,14 +15,14 @@
             </div>
             <div>
                 <h1>Account Sign-In</h1>
-                <form class="login" action="index.html" method="post">
+                <form class="login" action="signup.html" method="post">
                     <input type="text" name ="name" placeholder="Name">
                     <input type="text" name="ph-no" placeholder="Phone Number">
                     <input type="email" name="email" placeholder="E-Mail">
                     <input type="password" name="pass" placeholder="Password">
                     <input type="password" name="con-pass" placeholder="Confirm Password">
                     <input type="button" name="summit" value="Sign-in">
-                    <input type="button" name="alter" value="Log-in">
+                    <input type="button" name="alter" value="Log-in" onclick='location.href="login.html"'>
                 </form>
             </div>
         </main>

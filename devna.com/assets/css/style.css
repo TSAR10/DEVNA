@@ -1,0 +1,295 @@
+#mobileLogo
+{
+	display: none !important;
+}
+
+#searchNavbarMobile
+{
+	display: none !important;
+}
+
+#searchNavbarDesktop
+{
+	display: flex !important;
+}
+
+#navForMobile
+{
+	display: none !important;
+}
+
+.navTitle
+{
+	color: #0093D4
+}
+
+/* 
+==================================================================================================================
+
+MEGA MENU StART 
+
+==================================================================================================================
+*/
+
+.navbar .megamenu
+{
+	padding: 1rem;
+}
+
+/* ============ desktop view ============ */
+
+@media screen and (min-width: 992px)
+{
+
+	.navbar .has-megamenu
+	{
+		position: static !important;
+	}
+
+	.navbar .megamenu
+	{
+		
+		left: 0;
+		right: 0;
+		width: 95%;
+		margin-top: 0;
+	}
+
+}
+
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+
+@media screen and (min-width: 992px)
+{
+	.navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse
+	{
+		overflow-y: auto;
+		max-height: 90vh;
+		margin-top: 10px;
+	}
+}
+
+/* 
+==================================================================================================================
+
+MEGA MENU END
+
+==================================================================================================================
+*/
+
+
+/*
+==================================================================================================================
+
+DROPDOWN ON HOVER START
+
+==================================================================================================================
+*/
+
+/* ============ desktop view ============ */
+
+@media screen and (min-width: 992px)
+{
+	.navbar .nav-item .megamenu
+	{
+		display: block;
+		visibility: hidden;
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	.navbar .nav-item:hover .nav-link
+	{
+	}
+
+	.navbar .nav-item:hover .megamenu
+	{
+		display: block;
+		visibility: visible;
+		opacity: 1;
+		transform: translateY(-16px);
+		transition: .3s ease all;
+	}
+
+	.navbar .nav-item .dropdown-menu
+	{
+		margin-top:0;
+	}
+
+
+/* ============ desktop view .end// ============ */
+
+/*
+==================================================================================================================
+
+DROPDOWN ON HOVER START
+
+==================================================================================================================
+*/
+
+	.navbarToggler
+	{
+		position: relative;
+	}
+
+	.navbarToggler::before
+	{
+		background: none repeat scroll 0 0 transparent;
+		bottom: 0;
+		content: "";
+		display: block;
+		height: 2px;
+		left: 50%;
+		position: absolute;
+		background: #0093D4;
+		transition: width 0.3s ease 0s, left 0.3s ease 0s;
+		width: 0px;
+	}
+
+	.parentNavbarToggler:hover > .navbarToggler::before
+	{
+		width: 100%; 
+		left: 0;
+	}
+
+}
+
+/*
+==================================================================================================================
+
+DROPDOWN ON HOVER END
+
+==================================================================================================================
+*/
+
+/*
+==================================================================================================================
+
+NAVBAR SEARCH END
+
+==================================================================================================================
+*/
+
+#navTxtSearch:focus
+{
+	outline: none;
+	box-shadow: none;
+	border-color: white;
+}
+
+#navTxtSearch
+{
+	width: 400px;
+	border-left:none;
+	border-bottom-left-radius: 0%;
+	border-top-left-radius: 0%;
+	border-color: white;
+	font-family: 'Kanit', sans-serif;
+}
+
+.searchButtonNavbar
+{
+	background-color: transparent;
+	border-right:none;
+	border-top-right-radius: 0%;
+	border-bottom-right-radius: 0%;
+	border-color: white;
+}
+
+/*
+==================================================================================================================
+
+NAVBAR SEARCH END
+
+==================================================================================================================
+*/
+
+#btnLogin:hover
+{
+	background-color: transparent !important;
+	color: white !important;
+}
+
+#headerNavbar
+{
+	font-family: 'Roboto', sans-serif;
+}
+
+/* REPONSIVE NAVBAR MEDIA LAPTOP SMALL*/
+
+@media screen and (max-width: 1024px)
+{
+	#navTxtSearch
+	{
+		width: 250px;
+	}
+
+	.parentNavbarToggler
+	{
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+	}
+}
+
+/* RESPONSIVE NAVBAR MEDIA TABLET */
+
+@media screen and (max-width: 768px)
+{
+	#desktopLogo
+	{
+		display: none !important;
+	}
+
+	#mobileLogo
+	{
+		display: block !important;
+	}
+
+	#searchNavbarMobile
+	{
+		display: flex !important;
+	}
+
+	#navTxtSearch
+	{
+		width: 355px !important;
+	}
+
+	#searchNavbarDesktop
+	{
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 425px)
+{
+	#searchNavbarMobile
+	{
+		display: none !important;
+	}
+
+	#navForMobile
+	{
+		display: flex !important;
+	}
+
+	#navTxtSearch
+	{
+		width: 77vw !important;
+	}
+
+	.has-megamenu
+	{
+		font-size: 1rem !important;
+		margin-top: 0.5rem !important;
+		margin-bottom: 0.5rem !important;
+	}
+
+	.megamenu > li
+	{
+		margin: 0px !important;
+		padding: 0px !important;
+	}
+}

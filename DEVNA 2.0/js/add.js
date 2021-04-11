@@ -1,10 +1,6 @@
 $(document).ready(function(){
-    $('header').load("navbar.html");
-    $('footer').load("footer.html");
-    $('#veg-caterer').click(function(){
-        var req = "c1";
-        localStorage.setItem("choice",req)
-    });
+    $('head').load("../html/navbar.html");
+    $('footer').load("../html/footer.html");
 });
 // setInterval(function(){
 //     alert(req);

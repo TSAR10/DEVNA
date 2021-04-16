@@ -293,3 +293,8 @@ NAVBAR SEARCH END
 		padding: 0px !important;
 	}
 }
+
+#UlFooter > li
+{
+	padding-bottom: 16px;
+}

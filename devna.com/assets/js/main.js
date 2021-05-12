@@ -21,7 +21,7 @@ async function populateDropdown()
 	let options = `<option></option>`;
 	let country = "India";
 	let fetchedCities = [];
-	let url = "/assets/devnaConstants/cities.json";
+	let url = "https://tsar10.github.io/DEVNA/devna.com/assets/devnaConstants/cities.json";
 	await $.ajax
 	(
 		{

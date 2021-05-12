@@ -38,6 +38,7 @@ async function populateDropdown()
 			}
 		}
 	);
+
 	$("#dropdown").html(options);
 }
 

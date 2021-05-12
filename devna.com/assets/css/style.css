@@ -172,14 +172,14 @@ NAVBAR SEARCH END
 ==================================================================================================================
 */
 
-#navTxtSearch:focus
+.navTxtSearch:focus
 {
 	outline: none;
 	box-shadow: none;
 	border-color: white;
 }
 
-#navTxtSearch
+.navTxtSearch
 {
 	width: 400px;
 	border-left:none;
@@ -206,7 +206,7 @@ NAVBAR SEARCH END
 ==================================================================================================================
 */
 
-#btnLogin:hover
+#btnLoginNav:hover
 {
 	background-color: transparent !important;
 	color: white !important;
@@ -221,7 +221,7 @@ NAVBAR SEARCH END
 
 @media screen and (max-width: 1024px)
 {
-	#navTxtSearch
+	.navTxtSearch
 	{
 		width: 250px;
 	}
@@ -252,7 +252,7 @@ NAVBAR SEARCH END
 		display: flex !important;
 	}
 
-	#navTxtSearch
+	.navTxtSearch
 	{
 		width: 355px !important;
 	}
@@ -275,7 +275,7 @@ NAVBAR SEARCH END
 		display: flex !important;
 	}
 
-	#navTxtSearch
+	.navTxtSearch
 	{
 		width: 77vw !important;
 	}
@@ -297,4 +297,150 @@ NAVBAR SEARCH END
 #UlFooter > li
 {
 	padding-bottom: 16px;
+}
+
+#landingPageBanner
+{
+	background: url("../images/mobile-user-animate.svg") no-repeat;
+	background-position: left top;
+	height:90vh;
+	display:flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+#ddlCitySelect
+{
+	width:50%;
+}
+
+
+/* LOGIN STYLES FOR LAPTOPS*/
+
+@media screen and (min-width: 1024px)
+{
+	#loginWrapper
+	{
+		width: 45% !important;
+		/*height: 80% !important;*/
+	}
+
+	#signupWrapper
+	{
+		width: 45% !important;
+		/*height: 95% !important;*/
+	}
+
+	.textWithIcon
+	{
+		width:75%;
+	}
+
+	.inputIcons::before
+	{
+		position: absolute;
+		color: #000;
+		font-size: clamp(15px, 5vw, 21px);
+		top:60%;
+		left:50%; 
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media screen and (max-width: 768px)
+{
+	#loginWrapper, #signupWrapper
+	{
+		width: 70% !important;
+	}
+
+	.textWithIcon
+	{
+		width:75%;
+	}
+
+	.inputIcons::before
+	{
+		position: absolute;
+		color: #000;
+		font-size: clamp(15px, 5vw, 21px);
+		top:60%;
+		left:50%; 
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media screen and (max-width: 425px)
+{
+	#loginWrapper, #signupWrapper
+	{
+		width: 90% !important;
+	}
+
+	.textWithIcon
+	{
+		width:90%;
+	}
+
+	.inputIcons::before
+	{
+		position: absolute;
+		color: #000;
+		font-size: clamp(15px, 5vw, 21px);
+		top:60%;
+		left:50%; 
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media screen and (max-width: 375px)
+{
+	.inputIcons::before
+	{
+		position: absolute;
+		color: #000;
+		font-size: clamp(15px, 5vw, 21px);
+		top:50%;
+		left:50%; 
+		transform: translate(-50%, -50%);
+	}
+}
+/* Text With Icons */
+
+.textWithIcon .form-control
+{
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.textWithIcon .inputIcons
+{
+	position: absolute;
+	z-index: 2;
+	display: block;
+	width: 2.375rem;
+	height: 2.375rem;
+	line-height: 2.375rem;
+	text-align: center;
+	pointer-events: none;
+	color: #000; 
+}
+
+#txtUsername:focus, #txtPassword:focus, #txtName:focus, #txtConfirmPassword:focus, #txtPhoneNo:focus, #txtOtp:focus
+{
+	box-shadow: none;
+}
+
+#txtUsername, #txtPassword, #txtName, #txtConfirmPassword, #txtPhoneNo, #txtOtp
+{
+	background-color: transparent;
+	color: #000;
+	font-size: clamp(15px, 5vw, 21px);
+	padding-left: 40px !important; 
+}
+
+#btnLoginOtp
+{
+	background-color: #FB641B;
 }

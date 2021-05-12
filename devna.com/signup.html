@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="h-100">
+	<head>
+		<title>
+			SignUp
+		</title>
+
+		<!--Meta Tags-->
+		<meta charset="UTF-8">
+		<meta name="author" content="Tushar Sureka">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--Bootsatrap CSS-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+		<!--Google Fonts-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+
+		<!--Confirm JS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+
+		<!--Custom Styles-->
+		<link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+	</head>
+	<body class="d-flex flex-column h-100" style="background-image: url(assets/images/dark-paths.png);">
+
+		<header></header>
+
+		<main class="text-dark d-flex justify-content-center align-items-center h-100">
+			<div class="d-flex flex-column align-items-center bg-light py-3" id="signupWrapper">
+				<div class="mb-3">
+					<i class="fas fa-user-plus" aria-hidden="true" style="font-size: clamp(75px, 5vw, 35px)"></i>
+				</div>
+				
+				<div class="mb-2" style="font-size: clamp(30px, 5vw, 15px)">
+					Create Account
+				</div>
+				
+				<label class="sr-only" for="txtName">Username</label>
+			 	<div class="input-group mb-4 position-relative textWithIcon ">
+					<span class="fas fa-user-circle form-control-feedback inputIcons" style="font-size: clamp(21px, 5vw, 15px) "></span>
+					<input type="text" class="form-control border border-dark rounded-pill" id="txtName" placeholder="Name / Username">
+					<div class="invalid-feedback" id="invalidName">
+						Name Should not contain the any special characters.
+					</div>
+				</div>
+
+				<label class="sr-only" for="txtPhoneNo">Phone Number</label>
+				<div class="input-group mb-4 position-relative textWithIcon ">
+					<span class="fas fa-phone-alt form-control-feedback inputIcons" style="font-size: clamp(21px, 5vw, 15px)"></span>
+					<input type="text" class="form-control border border-dark rounded-pill" id="txtPhoneNo" placeholder="Phone Number">
+					<div class="invalid-feedback" id="invalidNumber">
+						Enter valid Phone Number
+					</div>
+				</div>
+
+				<label class="sr-only" for="txtPassword">Password</label>
+				<div class="input-group mb-4 position-relative textWithIcon ">
+					<span class="fa fa-lock form-control-feedback inputIcons" style="font-size: clamp(21px, 5vw, 15px)"></span>
+					<input type="password" class="form-control border border-dark rounded-pill" id="txtPassword" placeholder="Password">
+				</div>
+
+				<label class="sr-only" for="txtConfirmPassword">Confirm Password</label>
+			 	<div class="input-group mb-4 position-relative textWithIcon ">
+					<span class="fa fa-lock form-control-feedback inputIcons" style="font-size: clamp(21px, 5vw, 15px)"></span>
+					<input type="password" class="form-control border border-dark rounded-pill" id="txtConfirmPassword" placeholder="Confirm Password">
+					<div class="invalid-feedback" id="invalidPassword">
+						Confirm Password should be same as password 
+					</div>
+				</div>
+
+				<button type="button" class="btn btn-warning w-50 m-2 mb-4" id="btnSignup" style="font-size: clamp(20px, 4vw, 15px)"> SignUp </button>
+
+				<small class="mb-4">OR</small>
+
+				<button type="button" class="btn btn-info w-50 " id="btnLogin" style="font-size: clamp(20px, 4vw, 15px)"> Login </button>
+			</div>
+		</main>
+
+		<footer></footer>
+
+	</body>
+	<!--Jquery CDN-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<!--Bootstrap JS pooper and bootstrap JS-->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+	<!--Select 2 Script-->
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+	<!--FontAwesom Icons-->
+	<script src="https://kit.fontawesome.com/8d5cc5d659.js" crossorigin="anonymous"></script>
+
+	<!--Confirm JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+
+	<!--Custom JS-->
+	<script type="text/javascript" src="./assets/js/register/register.js"></script>
+</html>

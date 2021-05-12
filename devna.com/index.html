@@ -14,13 +14,20 @@
 		<!--Bootsatrap CSS-->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
+		<!--Select 2 css-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.1.1/dist/select2-bootstrap-5-theme.min.css">
+
 		<!--Google Fonts-->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
 
-		<!--FontAwesom Icons-->
-		<script src="https://kit.fontawesome.com/8d5cc5d659.js" crossorigin="anonymous"></script>
+		<!--Confirm JS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+
+		<!--Tiny Slider 2 CSS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 
 		<!--Custom Styles-->
 		<link rel="stylesheet" href="./assets/css/style.css" type="text/css">
@@ -33,6 +40,96 @@
 		</header>
 
 		<main>
+			<div class="container-fluid shadow-sm mb-5 bg-body rounded" id="landingPageBanner">
+				<div class="form-group m-4" id="ddlCitySelect">
+					<h1 class="display-3">One Stop For All Services</h1>
+					
+					<label class="control-label">
+						<h1 class="display-6">Choose Your City</h1>
+					</label>
+					
+					<select class="form-control" id="dropdown" name="dropdown" data-placeholder="Pick your city" data-tabindex="1">
+					</select>
+				</div>
+			</div>
+
+			<div class="container-fluid px-3">
+				<p class="h1 text-center mb-3">Top Categories</p>
+				<div class="row">
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="mx-2 my-2 px-2 py-2 bg-light rounded-circle">
+							<img src="./assets/images/icons/planner.svg" class="img-fluid">
+						</div>
+						<p class="mx-2 px-2 text-center fs-5">Organizer</p>
+					</div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="mx-2 my-2 px-2 py-2 bg-light rounded-circle">
+							<img src="./assets/images/icons/fitness.svg" class="img-fluid">
+						</div>
+						<p class="mx-2 px-2 text-center fs-5">Fitness</p>
+					</div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="mx-2 my-2 px-2 py-2 bg-light rounded-circle">
+							<img src="./assets/images/icons/mico.svg" class="img-fluid">
+						</div>
+						<p class="mx-2 px-2 text-center fs-5">Mechanic</p>
+					</div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="mx-2 my-2 px-2 py-2 bg-light rounded-circle">
+							<img src="./assets/images/icons/doctor.svg" class="img-fluid">
+						</div>
+						<p class="mx-2 px-2 text-center fs-5">Health Care</p>
+					</div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="mx-2 my-2 px-2 py-2 bg-light rounded-circle">
+							<img src="./assets/images/icons/pizza.svg" class="img-fluid">
+						</div>
+						<p class="mx-2 px-2 text-center fs-5">Catering</p>
+					</div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="mx-2 my-2 px-2 py-2 bg-light rounded-circle">
+							<img src="./assets/images/icons/makeup.svg" class="img-fluid">
+						</div>
+						<p class="mx-2 px-2 text-center fs-5">Grooming</p>
+					</div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="mx-2 my-2 px-2 py-2 bg-light rounded-circle">
+							<img src="./assets/images/icons/office.svg" class="img-fluid">
+						</div>
+						<p class="mx-2 px-2 text-center fs-5">Office</p>
+					</div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="mx-2 my-2 px-2 py-2 bg-light rounded-circle">
+							<img src="./assets/images/icons/cleaning.svg" class="img-fluid">
+						</div>
+						<p class="mx-2 px-2 text-center fs-5">Household</p>
+					</div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="mx-2 my-2 px-2 py-2 bg-light rounded-circle">
+							<img src="./assets/images/icons/pet.svg" class="img-fluid">
+						</div>
+						<p class="mx-2 px-2 text-center fs-5">Pet Care</p>
+					</div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="mx-2 my-2 px-2 py-2 bg-light rounded-circle">
+							<img src="./assets/images/icons/delivery.svg" class="img-fluid rounded-circle">
+						</div>
+						<p class="mx-2 px-2 text-center fs-5">Delivery</p>
+					</div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="mx-2 my-2 px-2 py-2 bg-light rounded-circle">
+							<img src="./assets/images/icons/security.svg" class="img-fluid rounded-circle">
+						</div>
+						<p class="mx-2 px-2 text-center fs-5">Security</p>
+					</div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="mx-2 my-2 px-2 py-2  bg-light rounded-circle">
+							<img src="./assets/images/icons/corona.svg" class="img-fluid rounded-circle">
+						</div>
+						<p class="mx-2 px-2 text-center fs-5">Covid Care</p>
+					</div>
+				</div>
+			</div>
 		</main>
 
 		<footer class="footer mt-auto">
@@ -48,6 +145,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 
+	<!--Select 2 Script-->
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
 	<!--W3Includes Js-->
 	<script src="https://www.w3schools.com/lib/w3.js"></script>
 
@@ -55,5 +155,17 @@
 	<script>
 		w3.includeHTML();
 	</script>
+
+	<!--FontAwesom Icons-->
+	<script src="https://kit.fontawesome.com/8d5cc5d659.js" crossorigin="anonymous"></script>
+
+	<!--Confirm JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+
+	<!--Tiny Slider 2 JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+	<!--Custom JS-->
+	<script src="./assets/js/main.js"></script>
 
 </html>
